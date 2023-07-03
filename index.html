@@ -32,19 +32,19 @@
 
     <main class="main">
         <header class="header">
-            <img src="./assets/img/erica.jpeg" alt="Foto de Erica Silva" class="photo">
+            <img src="./assets/img/erica.jpeg" alt="Foto de Erica Silva" class="photo" id="profile.photo">
 
-            <h1 class="title">Olá,<br> eu sou a Erica Silva</h1>
+            <h1 class="title">Olá,<br> eu sou a <span id="profile.name">Loading...</span> </h1>
             
 
             <div class="information">
-                <p class="job">Junior Developer</p>
-                <p class="location">São Paulo - SP</p>
+                <p class="job" id="profile.job"> Loading...</p>
+                <p class="location" id="profile.location"> Loading...</p>
                 <p class="phone">
-                    <a href="tel:(11) 9900-0000">(11) 9900-0000</a>
+                    <a href="tel:(11) 9900-0000" id="profile.phone">Loading...</a>
                 </p>
                 <p class="email">
-                    <a href="mailto:erica.bavieira@gmail.com ">erica.bavieira@gmail.com</a>
+                    <a href="mailto:erica.bavieira@gmail.com" id="profile.email">Loading...</a>
                 </p>
             </div>
         </header>
@@ -56,27 +56,17 @@
             <div class="content">
                 <div class="skills">
                    <section class="tools"> 
-                    <h3>Habilidades profissionais:</h3>
-                        <ul>
-                            <li>
-                                <img src="./assets/img/icons/js.svg" alt="JavaScript" title="JavaScript">
-                            </li>
-                            <li>
-                                <img src="./assets/img/icons/html.svg" alt="html" title="html">
-                            </li>
-                            <li>
-                                <img src="./assets/img/icons/css.svg" alt="css" title="css">
-                            </li>
+                    <h3>Hard Skills:</h3>
+                        <ul id="profile.skills.hardSkills">
+                           
                         </ul>
                     </section>
                     <section class="personal"> 
-                    <h3>Habilidades pessoais:</h3>
-                        <ul>
-                            <li>Facilidade com tarefas práticas</li>
-                            <li>Comunicação</li>
-                            <li>Trabalho em Equipe</li>
-                            <li>Organização</li>
-                            <li>Comprometimento com resultados</li>
+                    <h3>Soft Skills:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Loading...</li>
+                            <li>Loading...</li>
+                            <li>Loading...</li>
                         </ul>
                     </section> 
                 </div>
@@ -88,26 +78,9 @@
                 <h2>Idiomas</h2>
             </button>
             <div class="content">
-                <ul class="languages">
-                    <li>Português</li>
-                    <li>Inglês</li>
-                    <li>Espanhol</li>
-                    <li>Italiano</li>
-                </ul>
-            </div>
-        </section>
-        <section class="acordeon">
-            <button class="trigger">
-                <h2>Educação</h2> 
-            </button>
-
-
-            <div class="content">
-                <ul class="languages">
-                    <li>Português</li>
-                    <li>Inglês</li>
-                    <li>Espanhol</li>
-                    <li>Italiano</li>
+                <ul class="languages" id="profile.languages">
+                    <li>Loading...</li>
+                   
                 </ul>
             </div>
         </section>
@@ -118,19 +91,7 @@
             </button>
 
             <div class="content">
-                <ul class="portfolio">
-                    <li>
-                        <h3 class="title github">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
+                <ul class="portfolio" id="profile.portfolio">
                 </ul>
             </div>
         </section>
@@ -160,6 +121,8 @@
         </section>
     </main>
     <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

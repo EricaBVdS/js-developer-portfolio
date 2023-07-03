@@ -15,7 +15,7 @@
     padding-left: 1rem;
     margin: 1rem 0;
 }
-.portfolio li .title{
+.portfolio li h3{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 
-.portfolio li .title.github::before{
+.portfolio li h3.github::before{
     content: '';
     display: inline-block;
     width: 1rem;
